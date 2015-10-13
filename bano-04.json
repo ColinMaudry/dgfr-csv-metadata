@@ -66,8 +66,8 @@
     "foreignKeys": [{
     "columnReference": "6",
     "reference": {
-      "resource": "map-sources.csv",
-      "columnReference": "source"
+      "resource": "map-sources.json",
+      "columnReference": "code"
     }
   }],
     "aboutUrl" : "http://id.osmfr.org/bano/{1}"

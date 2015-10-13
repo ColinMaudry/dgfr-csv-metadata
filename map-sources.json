@@ -1,49 +1,27 @@
-{
-  "@id": "http://data.gouv.fr/enumerations/map-sources.json",
-  "@base": "http://data.gouv.fr/enumerations/map-sources.json#",
-  "@context": "http://www.w3.org/ns/csvw",
-  "columns": [{
-    "name": "code",
-    "titles": "Codes for map sources",
-  }, {
-    "name": "description",
-    "titles": "Description"
-  }],
-  "row" : [{
-    "describes": [{ 
+[
+    {
         "@id": "http://data.gouv.fr/enumerations/map-sources/OSM",
         "code": "OSM",
         "description": "donnée directement issue d'OpenStreetMap"
-      }]
     },
     {
-    "describes": [{ 
         "@id": "http://data.gouv.fr/enumerations/map-sources/OD",
         "code": "OD",
         "description": "donnée provenant de source opendata locale"
-      }]
     },
     {
-    "describes": [{ 
         "@id": "http://data.gouv.fr/enumerations/map-sources/O+O",
         "code": "O+O",
         "description": "donnée de source opendata enrichie par OpenStreetMap"
-      }]
     },
     {
-    "describes": [{ 
         "@id": "http://data.gouv.fr/enumerations/map-sources/CAD",
         "code": "CAD",
         "description": "donnée directement issue du cadastre"
-      }]
     },
     {
-    "describes": [{ 
         "@id": "http://data.gouv.fr/enumerations/map-sources/C+O",
         "code": "C+O",
         "description": "donnée du cadastre enrichie par OSM (nom de voie par exemple)"
-      }]
     }
-    ],
-  "primaryKey": "code"
-}
+]
