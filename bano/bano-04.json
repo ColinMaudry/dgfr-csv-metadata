@@ -7,17 +7,18 @@
   "dcterms:publisher": [],
   "dcterms:license": {"@id": "http://opendatacommons.org/licenses/odbl/1.0/"},
   "tableSchema": {
+    "separator" : ",",
     "columns": [{
       "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col1",
-      "name": "1",
+      "name": "col1",
       "number": "1",
       "dcterms:description": "code_insee + codefantoir + numero",
       "datatype": "string",
       "title" : "id",
       "propertyUrl" : "http://www.w3.org/ns/locn#addressId"
     }, {
-       "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col2",
-      "name": "2",
+      "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col2",
+      "name": "col2",
       "number": "2",
       "dcterms:description": "numéro dans la voie avec suffixe (ex: 1, 1BIS, 1D)",
       "datatype": "string",
@@ -25,50 +26,55 @@
       "propertyUrl" : "http://www.w3.org/ns/locn#locatorDesignator"
     },  {
       "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col3",
-      "name": "3",
+      "name": "col3",
       "number": "3",
       "dcterms:description": "nom de voie",
       "datatype": "string",
       "title" : "voie",
       "propertyUrl" : "http://www.w3.org/ns/locn#thoroughfare"
     }, {
-      "name": "4",
+      "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col4",
+      "name": "col4",
       "number": "4",
       "dcterms:description": "code postal sur 5 caractères",
       "datatype": "string",
       "title" : "code_post",
       "propertyUrl" : "http://www.w3.org/ns/locn#postalCode"
     }, {
-      "name": "5",
+      "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col5",
+      "name": "col5",
       "number": "5",
       "title": "nom_comm",
       "dcterms:description": "nom de la commune",
       "datatype": "string",
       "propertyUrl" : "http://www.w3.org/ns/locn#locatorName"
     }, {
-      "name": "6",
+      "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col6",
+      "name": "col6",
       "number": "6",
       "titles": "source",
       "dcterms:description": "OSM = donnée directement issue d'OpenStreetMap, OD = donnée provenant de source opendata locale, O+O = donnée de source opendata enrichie par OpenStreetMap, CAD = donnée directement issue du cadastre, C+O = donnée du cadastre enrichie par OSM (nom de voie par exemple)",
       "datatype": "string"
     }, {
-      "name": "7",
+      "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col7",
+      "name": "col7",
       "number": "7",
       "title": "lat",
       "dcterms:description": "latitude en degrés décimaux WGS84",
       "datatype": "decimal",
       "propertyUrl" : "schema:latitude"
     }, {
-      "name": "8",
+      "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#col8",
+      "name": "col8",
       "number": "8",
       "title": "long",
       "dcterms:description": "longitude en degrés décimaux WGS84",
       "datatype": "decimal",
       "propertyUrl" : "schema:longitude"
     }],
-    "primaryKey": "1",
+    "primaryKey": "col1",
     "foreignKeys": [{
-    "columnReference": "6",
+    "columnReference": "col6",
     "reference": {
       "resource": "map-sources.json",
       "columnReference": "code"
