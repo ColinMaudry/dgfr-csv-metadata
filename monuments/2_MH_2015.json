@@ -1,0 +1,132 @@
+{
+  "@context" : ["http://www.w3.org/ns/csvw",
+                {"@base":"https://www.data.gouv.fr/s/resources/monuments-historiques-liste-des-immeubles-proteges-au-titre-des-monuments-historiques/20151118-173351/2_MH_2015.csv"},
+                {"dgfr":"http://data.gouv.fr/voc#"}],  
+  "url":"https://www.data.gouv.fr/s/resources/monuments-historiques-liste-des-immeubles-proteges-au-titre-des-monuments-historiques/20151118-173351/2_MH_2015.csv",
+  "@id":"https://www.data.gouv.fr/s/resources/monuments-historiques-liste-des-immeubles-proteges-au-titre-des-monuments-historiques/20151118-173351/2_MH_2015.csv#id",
+  "dcterms:title": "Liste des Immeubles protégés au titre des Monuments Historiques (total France en 2014)",
+  "tableSchema": {
+    "separator":",",
+    "columns": [{
+      "@id":"#col1",
+      "name": "N°",
+      "number": "1",
+      "dcterms:description":"",
+      "datatype": "integer",
+      "title" : "N°"
+    }, {
+      "@id":"#col2",
+      "name": "REFERENCE",
+      "number": "2",
+      "dcterms:description": "",
+      "datatype": "string",
+      "propertyUrl" : "dct:identifier"
+    },  {
+      "@id":"#col3",
+      "name": "étude",
+      "number": "3",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col4",
+      "name": "région",
+      "number": "4",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col5",
+      "name": "département",
+      "datatype": "decimal",
+      "number": "5",
+      "dcterms:description": "",
+    }, {
+      "@id":"#col6",
+      "name": "Commune",
+      "number": "6",
+      "dcterms:description": "",
+    }, {
+      "@id":"#col7",
+      "name": "INSEE",
+      "number": "7",
+      "dcterms:description": "",
+      "datatype": "string",
+      "propertyUrl" : "dgfr:codeINSEE"
+    }, {
+      "@id":"#col8",
+      "name": "Adresse",
+      "number": "8",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col9",
+      "name": "dénomination",
+      "number": "9",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col10",
+      "name": "titre courant",
+      "number": "10",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col11",
+      "name": "statut propriété",
+      "number": "11",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col12",
+      "name": "affectataire",
+      "number": "12",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col13",
+      "name": "protection",
+      "number": "13",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col14",
+      "name": "préc. Protection",
+      "number": "14",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col15",
+      "name": "date protection",
+      "number": "15",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col16",
+      "name": "date protection",
+      "number": "15",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col16",
+      "name": "auteur(s)",
+      "number": "16",
+      "dcterms:description": "",
+      "datatype": "string"
+    }, {
+      "@id":"#col17",
+      "name": "siècle",
+      "number": "17",
+      "dcterms:description": "",
+      "datatype": "string"
+    }],
+    "primaryKey": "2",
+    "foreignKeys": [{
+    "columnReference": "7",
+    "reference": {
+      "resource": "codes-insee.json",
+      "columnReference": "code"
+    }
+  }],
+    "aboutUrl" : "http://id.osmfr.org/bano/{1}",
+    "@type":"https://www.wikidata.org/wiki/Q811979"
+  }
+}
