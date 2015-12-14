@@ -20,4 +20,4 @@ Walkthrough for bano-O4.json:
 - `propertyUrl` is the URI of the property/predicate that would be used to connect the subject (here, an address, materialized by the row) and the value of the cell (the object of the triple). When we use our custom context, short URIs will be used (`locn:addressId` instead of `http://www.w3.org/ns/locn#addressId`).
 - When no `propertyUrl` is mentioned, it means no property was created for it. Mostly because it's quite a specific property, not used often. In this case, the `source` is a concept that is quite specific to the dataset.
 - `primaryKey` is a property of the `tableSchema`. It indicated the `name` of the column that contains the primary key of the table
-- `aboutUrl` defines a template that determines the URI of the object described in each row. Here, it's the template for the URIs of the addresses, based on Christian Q. work.
+- `aboutUrl` defines a template that determines the URI of the object described in each row. Here, it's the template for the URIs of the addresses, based on Christian Q.'s' work.
