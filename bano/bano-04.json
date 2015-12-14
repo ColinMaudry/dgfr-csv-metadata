@@ -10,7 +10,6 @@
     "columns": [{
       "@id":"#col1",
       "name": "col1",
-      "number": "1",
       "dcterms:description": "code_insee + codefantoir + numero",
       "datatype": "string",
       "title" : "id",
@@ -25,7 +24,6 @@
     },  {
       "@id":"#col3",
       "name": "col3",
-      "number": "3",
       "dcterms:description": "nom de voie",
       "datatype": "string",
       "title" : "voie",
@@ -33,30 +31,24 @@
     }, {
       "@id":"#col4",
       "name": "col4",
-      "number": "4",
       "dcterms:description": "code postal sur 5 caractères",
-      "datatype": "string",
       "title" : "code_post",
       "propertyUrl" : "http://www.w3.org/ns/locn#postalCode"
     }, {
       "@id":"#col5",
       "name": "col5",
-      "number": "5",
-      "title": "nom_comm",
       "dcterms:description": "nom de la commune",
       "datatype": "string",
       "propertyUrl" : "http://www.w3.org/ns/locn#locatorName"
     }, {
       "@id":"#col6",
       "name": "col6",
-      "number": "6",
       "title": "source",
       "dcterms:description": "OSM = donnée directement issue d'OpenStreetMap, OD = donnée provenant de source opendata locale, O+O = donnée de source opendata enrichie par OpenStreetMap, CAD = donnée directement issue du cadastre, C+O = donnée du cadastre enrichie par OSM (nom de voie par exemple)",
       "datatype": "string"
     }, {
       "@id":"#col7",
       "name": "col7",
-      "number": "7",
       "title": "lat",
       "dcterms:description": "latitude en degrés décimaux WGS84",
       "datatype": "decimal",
@@ -64,7 +56,6 @@
     }, {
       "@id":"#col8",
       "name": "col8",
-      "number": "8",
       "title": "long",
       "dcterms:description": "longitude en degrés décimaux WGS84",
       "datatype": "decimal",
