@@ -13,7 +13,6 @@
       "number": "1",
       "dcterms:description":"",
       "datatype": "integer",
-      "title" : "N°"
     }, {
       "@id":"#col2",
       "name": "REFERENCE",
@@ -126,7 +125,6 @@
       "columnReference": "code"
     }
   }],
-    "aboutUrl" : "http://id.osmfr.org/bano/{1}",
     "@type":"https://www.wikidata.org/wiki/Q811979"
   }
 }
