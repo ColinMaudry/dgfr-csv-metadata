@@ -1,0 +1,75 @@
+{
+  	"@context" : ["http://www.w3.org/ns/csvw",
+                {"@base":"https://www.data.gouv.fr/s/resources/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/community/20150116-105204/depp-etablissements-premier-et-second-degres-structures-administratives-education-avril-2014.csv"},
+                {"dgfr":"http://data.gouv.fr/voc#"}],
+	"url":"https://www.data.gouv.fr/s/resources/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/community/20150116-105204/depp-etablissements-premier-et-second-degres-structures-administratives-education-avril-2014.csv",
+	"@id":"https://www.data.gouv.fr/s/resources/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/community/20150116-105204/depp-etablissements-premier-et-second-degres-structures-administratives-education-avril-2014.csv#id",
+	"dcterms:title":"Adresse et géolocalisation des établissements d'enseignement du premier et second degrés",
+	"tableSchema": {
+		"separator":";",
+		"columns": [
+		{
+			"@id":"#col1",
+		    "name": "numero_uai",
+		    "dcterms:description":"",
+		    "datatype": "string",
+		    "propertyUrl":"dcterms:identifier"
+			},
+		{
+			"@id":"#col2",
+		    "name": "appellation_officielle_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col3",
+		    "name": "denomination_principale_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col4",
+		    "name": "patronyme_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col5",
+		    "name": "X",
+		    "dcterms:description":"",
+		    "datatype": "double"
+			},
+		{
+			"@id":"#col6",
+		    "name": "Y",
+		    "dcterms:description":"",
+		    "datatype": "double"
+			},
+		{
+			"@id":"#col7",
+		    "name": "etat_etablissement",
+		    "dcterms:description":"",
+		    "datatype": "integer"
+			},
+		{
+			"@id":"#col8",
+		    "name": "nature_uai",
+		    "dcterms:description":"",
+		    "datatype": "integer"
+			},
+		{
+			"@id":"#col9",
+		    "name": "lib_nature",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col10",
+		    "name": "sous_fic",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			}],
+		"primaryKey":"1"
+	}
+
+}
