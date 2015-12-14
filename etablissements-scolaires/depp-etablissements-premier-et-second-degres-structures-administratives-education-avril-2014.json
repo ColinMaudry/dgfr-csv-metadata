@@ -37,13 +37,13 @@
 			"@id":"#col5",
 		    "name": "X",
 		    "dcterms:description":"",
-		    "datatype": "double"
+		    "datatype": "decimal"
 			},
 		{
 			"@id":"#col6",
 		    "name": "Y",
 		    "dcterms:description":"",
-		    "datatype": "double"
+		    "datatype": "decimal"
 			},
 		{
 			"@id":"#col7",
@@ -69,7 +69,6 @@
 		    "dcterms:description":"",
 		    "datatype": "string"
 			}],
-		"primaryKey":"1"
+		"primaryKey":"numero_uai"
 	}
-
 }
