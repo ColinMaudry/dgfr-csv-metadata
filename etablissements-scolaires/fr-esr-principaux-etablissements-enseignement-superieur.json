@@ -1,0 +1,392 @@
+{
+  	"@context" : ["http://www.w3.org/ns/csvw",
+                {"@base":"https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-principaux-etablissements-enseignement-superieur/download"},
+                {"dgfr":"http://data.gouv.fr/voc#"}],
+	"url":"https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-principaux-etablissements-enseignement-superieur/download?format=csv",
+	"@id":"https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-principaux-etablissements-enseignement-superieur/download#id",
+	"dcterms:title":"Principaux établissements d'enseignement supérieur",
+	"tableSchema": {
+		"separator":";",
+		"columns": [
+		{
+			"@id":"#col1",
+		    "name": "uai",
+		    "dcterms:description":"",
+		    "datatype": "string",
+		    "propertyUrl":"dcterms:identifier"
+			},
+		{
+			"@id":"#col2",
+		    "name": "uo_lib",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col3",
+		    "name": "sigle",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col4",
+		    "name": "type_d_etablissement",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col5",
+		    "name": "secteur_d_etablissement",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col6",
+		    "name": "url",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI",
+		    "propertyUrl":"foaf:homepage"
+			},
+		{
+			"@id":"#col7",
+		    "name": "coordonnees",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col8",
+		    "name": "element_wikidata",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI",
+		    "propertyUrl":"owl:sameAs"
+			},
+		{
+			"@id":"#col9",
+		    "name": "rattachement",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col10",
+		    "name": "rattachement_identifiants",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col11",
+		    "name": "dernier_decret_legifrance",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col12",
+		    "name": "localisation",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col13",
+		    "name": "com_code",
+		    "dcterms:description":"",
+		    "datatype": "string",
+		    "propertyUrl":"dgfr:codeINSEE",
+		    "valueUrl":"http://id.insee.fr/geo/commune/{com_code}"
+			},
+		{
+			"@id":"#col14",
+		    "name": "com_nom",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col15",
+		    "name": "uucr_id",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col16",
+		    "name": "uucr_nom",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col17",
+		    "name": "dep_id",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col18",
+		    "name": "dep_nom",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col19",
+		    "name": "aca_id",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col20",
+		    "name": "aca_nom",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col21",
+		    "name": "reg_id",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col22",
+		    "name": "reg_nom",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col23",
+		    "name": "mention_distribution",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col24",
+		    "name": "adresse_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col25",
+		    "name": "lieu_dit_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col26",
+		    "name": "boite_postale_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col27",
+		    "name": "code_postal_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col28",
+		    "name": "localite_acheminement_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col29",
+		    "name": "pays_etranger_acheminement",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col30",
+		    "name": "numero_telephone_uai",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col31",
+		    "name": "siret",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col32",
+		    "name": "identifiant_eter",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col33",
+		    "name": "identifiant_freebase",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI",
+		    "propertyUrl":"owl:sameAs"
+			},
+		{
+			"@id":"#col34",
+		    "name": "",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col35",
+		    "name": "statut_juridique_court",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col36",
+		    "name": "statut_juridique_long",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col37",
+		    "name": "qualification_long",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col38",
+		    "name": "compte_facebook",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col39",
+		    "name": "compte_twitter",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col40",
+		    "name": "compte_flickr",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col41",
+		    "name": "flux_rss",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI",
+		    "propertyUrl":"sioc:feed"
+			},
+		{
+			"@id":"#col42",
+		    "name": "compte_linkedin",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col43",
+		    "name": "compte_pinterest",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col44",
+		    "name": "compte_france_culture",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col45",
+		    "name": "compte_scribd",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col46",
+		    "name": "compte_scoopit",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col47",
+		    "name": "compte_tumblr",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col48",
+		    "name": "compte_viadeo",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col49",
+		    "name": "compte_dailymotion",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col50",
+		    "name": "compte_vimeo",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col51",
+		    "name": "compte_youtube",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col52",
+		    "name": "compte_googleplus",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col53",
+		    "name": "autres",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col54",
+		    "name": "mooc",
+		    "dcterms:description":"",
+		    "datatype": "xsd:anyURI"
+			},
+		{
+			"@id":"#col55",
+		    "name": "statut_operateur_lolf",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col56",
+		    "name": "libelle_mission_chef_de_file",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col57",
+		    "name": "identifiant_programme_lolf_chef_de_file",
+		    "dcterms:description":"",
+		    "datatype": "integer"
+			},
+		{
+			"@id":"#col58",
+		    "name": "libelle_programme_lolf_chef_de_file",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col59",
+		    "name": "identifiants_autres_programmes_lolf",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col60",
+		    "name": "libelles_autres_programmes_lolf",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col61",
+		    "name": "association",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			},
+		{
+			"@id":"#col62",
+		    "name": "association_identifiants",
+		    "dcterms:description":"",
+		    "datatype": "string"
+			}],
+		"primaryKey":"uai"
+	}
+}
