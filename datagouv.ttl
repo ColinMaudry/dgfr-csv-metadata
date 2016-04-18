@@ -2,8 +2,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix igeo: <http://rdf.insee.fr/def/geo#> .
 
-dgfr:département a rdf:property ;
-	rdfs:range igeo:Département .
+dgfr:departement a rdf:property ;
+	rdfs:range igeo:Departement .
 
 dgfr:codeINSEE a rdf:property ;
 	rdfs:range igeo:Commune .
