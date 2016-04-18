@@ -1,0 +1,84 @@
+{
+	"@context": ["http://www.w3.org/ns/csvw", {
+		"@base": "https://www.data.gouv.fr/s/resources/elections-regionales-2015-et-des-assemblees-de-corse-de-guyane-et-de-martinique-resultats-par-bureaux-de-vote-tour-2/20151217-112435/RG15_Bvot_T2.txt#"
+	}, {
+		"dgfr": "http://data.gouv.fr/voc#"
+	}],
+	"url": "https://www.data.gouv.fr/s/resources/elections-regionales-2015-et-des-assemblees-de-corse-de-guyane-et-de-martinique-resultats-par-bureaux-de-vote-tour-2/20151217-112435/RG15_Bvot_T2.txt",
+	"@id": "https://www.data.gouv.fr/s/resources/elections-regionales-2015-et-des-assemblees-de-corse-de-guyane-et-de-martinique-resultats-par-bureaux-de-vote-tour-2/20151217-112435/RG15_Bvot_T2.txt#id",
+	"dcterms:title": "Elections régionales 2015 et des assemblées de Corse, de Guyane et de Martinique – Résultats par bureaux de vote – Tour 1",
+	"tableSchema": {
+		"separator": ";",
+		"columns": [{
+			"@id": "col1",
+			"name": "NUMTOUR",
+			"dcterms:description": "Tour",
+			"datatype": "integer"
+		}, {
+			"@id": "col2",
+			"name": "CODDPT",
+			"dcterms:description": "Code département",
+			"datatype": "string",
+			"propertyUrl": "dgfr:departement",
+			"valueUrl": "http://id.insee.fr/geo/departement/{CODDPT}"
+		}, {
+			"@id": "col3",
+			"name": "CODSUBCOM",
+			"dcterms:description": "Sous-code commune",
+			"datatype": "string",
+			"propertyUrl": "dgfr:codeINSEE",
+			"valueUrl": "http://id.insee.fr/geo/commune/{CODDPT}{CODSUBCOM}"
+		}, {
+			"@id": "col4",
+			"name": "LIBSUBCOM",
+			"dcterms:description": "Nom de la commune",
+			"datatype": "string"
+		}, {
+			"@id": "col5",
+			"name": "CODBURVOT",
+			"dcterms:description": "Code du bureau de vote",
+			"datatype": "string"
+		}, {
+			"@id": "col6",
+			"name": "SUM(M.NBRINS)",
+			"dcterms:description": "Nombre d'électeurs inscrits",
+			"datatype": "integer"
+		}, {
+			"@id": "col7",
+			"name": "SUM(M.NBRVOT)",
+			"dcterms:description": "Nombre de votants",
+			"datatype": "integer"
+		}, {
+			"@id": "col8",
+			"name": "SUM(M.NBREXP)",
+			"dcterms:description": "Nombre de votes exprimés (non blancs ou nuls)",
+			"datatype": "integer"
+		}, {
+			"@id": "col9",
+			"name": "NUMDEPCAND",
+			"dcterms:description": "Nombre de candidats",
+			"datatype": "integer"
+		}, {
+			"@id": "col10",
+			"name": "NOMPSN",
+			"dcterms:description": "Nom de famille du candidat",
+			"datatype": "string"
+		}, {
+			"@id": "col11",
+			"name": "PREPSN",
+			"dcterms:description": "Prénom du candidat",
+			"datatype": "string"
+		}, {
+			"@id": "col12",
+			"name": "CODNUA",
+			"dcterms:description": "Code parti politique",
+			"datatype": "string"
+		}, {
+			"@id": "col13",
+			"name": "SUM(V.NBRVOIX)",
+			"dcterms:description": "Nombre de voix obtenues",
+			"datatype": "integer"
+		}]
+	}
+
+}
