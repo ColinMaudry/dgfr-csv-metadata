@@ -5,8 +5,10 @@
   "url":"http://bano.openstreetmap.fr/data/bano-04.csv",
   "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#id",
   "dcterms:title": "Base d'Adresses Nationale Ouverte (département 04)",
+  "dialect" : {
+      "delimiter" : ","
+    },
   "tableSchema": {
-    "separator" : ",",
     "columns": [{
       "@id":"#col1",
       "name": "col1",

@@ -5,8 +5,10 @@
 	"url":"https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-principaux-etablissements-enseignement-superieur/download?format=csv",
 	"@id":"https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-principaux-etablissements-enseignement-superieur/download#id",
 	"dcterms:title":"Principaux établissements d'enseignement supérieur",
+	"delimiter" : {
+		"delimiter" : ";"
+		},
 	"tableSchema": {
-		"separator":";",
 		"columns": [
 		{
 			"@id":"#col1",

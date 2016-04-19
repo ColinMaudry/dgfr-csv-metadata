@@ -5,8 +5,10 @@
 	"url":"https://www.data.gouv.fr/s/resources/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/community/20150116-105204/depp-etablissements-premier-et-second-degres-structures-administratives-education-avril-2014.csv",
 	"@id":"https://www.data.gouv.fr/s/resources/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/community/20150116-105204/depp-etablissements-premier-et-second-degres-structures-administratives-education-avril-2014.csv#id",
 	"dcterms:title":"Adresse et géolocalisation des établissements d'enseignement du premier et second degrés",
+	"dialect"  : {
+		"delimiter" : ";"
+		},
 	"tableSchema": {
-		"separator":";",
 		"columns": [
 		{
 			"@id":"#col1",

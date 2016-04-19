@@ -5,8 +5,10 @@
   "url":"https://www.data.gouv.fr/s/resources/monuments-historiques-liste-des-immeubles-proteges-au-titre-des-monuments-historiques/20151118-173351/2_MH_2015.csv",
   "@id":"https://www.data.gouv.fr/s/resources/monuments-historiques-liste-des-immeubles-proteges-au-titre-des-monuments-historiques/20151118-173351/2_MH_2015.csv#id",
   "dcterms:title": "Liste des Immeubles protégés au titre des Monuments Historiques (total France en 2014)",
+  "dialect" : {
+    "delimiter" : ","
+    },
   "tableSchema": {
-    "separator":",",
     "columns": [{
       "@id":"#col1",
       "name": "N°",

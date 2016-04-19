@@ -7,9 +7,11 @@
 	"url": "https://www.data.gouv.fr/s/resources/elections-regionales-2015-et-des-assemblees-de-corse-de-guyane-et-de-martinique-resultats-par-bureaux-de-vote-tour-2/20151217-112435/RG15_Bvot_T2.txt",
 	"@id": "https://www.data.gouv.fr/s/resources/elections-regionales-2015-et-des-assemblees-de-corse-de-guyane-et-de-martinique-resultats-par-bureaux-de-vote-tour-2/20151217-112435/RG15_Bvot_T2.txt#id",
 	"dcterms:title": "Elections régionales 2015 et des assemblées de Corse, de Guyane et de Martinique – Résultats par bureaux de vote – Tour 1",
+	"dialect" : {
+		"encoding" : "iso-8859-3",
+		"delimiter" : ";"
+		},
 	"tableSchema": {
-		"encoding" : "iso8859-3",
-		"separator": ";",
 		"columns": [{
 			"@id": "col1",
 			"name": "NUMTOUR",
@@ -66,7 +68,7 @@
 			"@id": "col10",
 			"name": "NOMPSN",
 			"dcterms:description": "Nom de famille du candidat",
-			"datatype": "string"
+			"datatype": "integer"
 		}, {
 			"@id": "col11",
 			"name": "PREPSN",
