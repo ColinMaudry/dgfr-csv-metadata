@@ -8,6 +8,7 @@
 	"@id": "https://www.data.gouv.fr/s/resources/elections-regionales-2015-et-des-assemblees-de-corse-de-guyane-et-de-martinique-resultats-par-bureaux-de-vote-tour-2/20151217-112435/RG15_Bvot_T2.txt#id",
 	"dcterms:title": "Elections régionales 2015 et des assemblées de Corse, de Guyane et de Martinique – Résultats par bureaux de vote – Tour 1",
 	"tableSchema": {
+		"encoding" : "iso8859-3",
 		"separator": ";",
 		"columns": [{
 			"@id": "col1",
@@ -40,17 +41,20 @@
 			"datatype": "string"
 		}, {
 			"@id": "col6",
-			"name": "SUM(M.NBRINS)",
+			"name" : "SUM_M_NBRINS_",
+			"titles": "SUM(M.NBRINS)",
 			"dcterms:description": "Nombre d'électeurs inscrits",
 			"datatype": "integer"
 		}, {
 			"@id": "col7",
-			"name": "SUM(M.NBRVOT)",
+			"name": "SUM_M_NBRVOT_",
+			"titles": "SUM(M.NBRVOT)",
 			"dcterms:description": "Nombre de votants",
 			"datatype": "integer"
 		}, {
 			"@id": "col8",
-			"name": "SUM(M.NBREXP)",
+			"name": "SUM_M_NBREXP_",
+			"titles": "SUM(M.NBREXP)",
 			"dcterms:description": "Nombre de votes exprimés (non blancs ou nuls)",
 			"datatype": "integer"
 		}, {
@@ -75,7 +79,8 @@
 			"datatype": "string"
 		}, {
 			"@id": "col13",
-			"name": "SUM(V.NBRVOIX)",
+			"name" : "SUM_V_NBRVOIX_",
+			"titles": "SUM(V.NBRVOIX)",
 			"dcterms:description": "Nombre de voix obtenues",
 			"datatype": "integer"
 		}]
