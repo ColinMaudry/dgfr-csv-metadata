@@ -76,19 +76,19 @@
 		{
 			"@id":"#col11",
 		    "name": "dernier_decret_legifrance",
-		    "dcterms:description":"",
+		    "dcterms:description":"Dernier décret Legifrance",
 		    "datatype": "xsd:anyURI"
 			},
 		{
 			"@id":"#col12",
 		    "name": "localisation",
-		    "dcterms:description":"",
+		    "dcterms:description":"Région>département>ville>arrondissement",
 		    "datatype": "string"
 			},
 		{
 			"@id":"#col13",
 		    "name": "com_code",
-		    "dcterms:description":"",
+		    "dcterms:description":"Code Officiel Géographique de la commune",
 		    "datatype": "string",
 		    "propertyUrl":"dgfr:codeINSEE",
 		    "valueUrl":"http://id.insee.fr/geo/commune/{com_code}"
@@ -96,7 +96,7 @@
 		{
 			"@id":"#col14",
 		    "name": "com_nom",
-		    "dcterms:description":"",
+		    "dcterms:description":"Nom de la commune",
 		    "datatype": "string"
 			},
 		{
