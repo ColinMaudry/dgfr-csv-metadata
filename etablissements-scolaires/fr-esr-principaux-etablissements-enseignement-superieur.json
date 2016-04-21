@@ -13,64 +13,64 @@
 		{
 			"@id":"#col1",
 		    "name": "uai",
-		    "dcterms:description":"",
+		    "dcterms:description":"Identifiant",
 		    "datatype": "string",
 		    "propertyUrl":"dcterms:identifier"
 			},
 		{
 			"@id":"#col2",
 		    "name": "uo_lib",
-		    "dcterms:description":"",
+		    "dcterms:description":"Nom de l'établissement",
 		    "datatype": "string"
 			},
 		{
 			"@id":"#col3",
 		    "name": "sigle",
-		    "dcterms:description":"",
+		    "dcterms:description":"Sigle",
 		    "datatype": "string"
 			},
 		{
 			"@id":"#col4",
 		    "name": "type_d_etablissement",
-		    "dcterms:description":"",
+		    "dcterms:description":"Type",
 		    "datatype": "string"
 			},
 		{
 			"@id":"#col5",
 		    "name": "secteur_d_etablissement",
-		    "dcterms:description":"",
+		    "dcterms:description":"Secteur public ou privé",
 		    "datatype": "string"
 			},
 		{
 			"@id":"#col6",
 		    "name": "url",
-		    "dcterms:description":"",
+		    "dcterms:description":"Adresse du site Web",
 		    "datatype": "xsd:anyURI",
 		    "propertyUrl":"foaf:homepage"
 			},
 		{
 			"@id":"#col7",
 		    "name": "coordonnees",
-		    "dcterms:description":"",
+		    "dcterms:description":"Coordonnées géographique",
 		    "datatype": "string"
 			},
 		{
 			"@id":"#col8",
 		    "name": "element_wikidata",
-		    "dcterms:description":"",
+		    "dcterms:description":"Identifiant Wikidata",
 		    "datatype": "xsd:anyURI",
 		    "propertyUrl":"owl:sameAs"
 			},
 		{
 			"@id":"#col9",
 		    "name": "rattachement",
-		    "dcterms:description":"",
+		    "dcterms:description":"Etablissement de rattachement (nom)",
 		    "datatype": "string"
 			},
 		{
 			"@id":"#col10",
 		    "name": "rattachement_identifiants",
-		    "dcterms:description":"",
+		    "dcterms:description":"Etablissement de rattachement (identifiant)",
 		    "datatype": "string"
 			},
 		{
