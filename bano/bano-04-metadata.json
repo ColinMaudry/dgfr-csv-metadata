@@ -1,0 +1,78 @@
+{
+  "@context" : ["http://www.w3.org/ns/csvw",
+                {"@base":"http://bano.openstreetmap.fr/data/bano-04.csv"},
+                {"dgfr":"http://data.gouv.fr/voc#"},
+                {"locn":"http://www.w3.org/ns/locn#"}
+              ],
+  "url":"http://bano.openstreetmap.fr/data/bano-04.csv",
+  "@id":"http://bano.openstreetmap.fr/data/bano-04.csv#id",
+  "dcterms:title": "Base d'Adresses Nationale Ouverte (département 04)",
+  "dialect" : {
+      "delimiter" : ","
+    },
+  "tableSchema": {
+    "columns": [{
+      "@id":"#col1",
+      "name": "col1",
+      "dcterms:description": "code_insee + codefantoir + numero",
+      "datatype": "string",
+      "title" : "id",
+      "propertyUrl" : "locn:addressId"
+    }, {
+      "@id":"#col2",
+      "name": "col2",
+      "dcterms:description": "numéro dans la voie avec suffixe (ex: 1, 1BIS, 1D)",
+      "datatype": "string",
+      "title" : "numero",
+      "propertyUrl" : "locn:locatorDesignator"
+    },  {
+      "@id":"#col3",
+      "name": "col3",
+      "dcterms:description": "nom de voie",
+      "datatype": "string",
+      "title" : "voie",
+      "propertyUrl" : "locn:thoroughfare"
+    }, {
+      "@id":"#col4",
+      "name": "col4",
+      "dcterms:description": "code postal sur 5 caractères",
+      "title" : "code_post",
+      "propertyUrl" : "locn:postalCode"
+    }, {
+      "@id":"#col5",
+      "name": "col5",
+      "dcterms:description": "nom de la commune",
+      "datatype": "string",
+      "propertyUrl" : "locn:locatorName"
+    }, {
+      "@id":"#col6",
+      "name": "col6",
+      "title": "source",
+      "dcterms:description": "OSM = donnée directement issue d'OpenStreetMap, OD = donnée provenant de source opendata locale, O+O = donnée de source opendata enrichie par OpenStreetMap, CAD = donnée directement issue du cadastre, C+O = donnée du cadastre enrichie par OSM (nom de voie par exemple)",
+      "datatype": "string"
+    }, {
+      "@id":"#col7",
+      "name": "col7",
+      "title": "lat",
+      "dcterms:description": "latitude en degrés décimaux WGS84",
+      "datatype": "decimal",
+      "propertyUrl" : "schema:latitude"
+    }, {
+      "@id":"#col8",
+      "name": "col8",
+      "title": "long",
+      "dcterms:description": "longitude en degrés décimaux WGS84",
+      "datatype": "decimal",
+      "propertyUrl" : "schema:longitude"
+    }],
+    "primaryKey": "col1",
+    "foreignKeys": [{
+    "columnReference": "col6",
+    "reference": {
+      "resource": "map-sources.json",
+      "columnReference": "code"
+    }
+  }],
+    "aboutUrl" : "http://id.osmfr.org/bano/{1}"
+  }
+}
