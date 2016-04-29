@@ -38,7 +38,7 @@ Column `name` cannot contain special characters (dot, parenthesis, commas, quest
 
 Solution picked: always add a `name` to columns. If the column header in the CSV has characters unallowed in `name`:
 
-	1. Replace unallowed characters with underscores in `name`
-	2. Add a `titles` property to the column, with the orginal column header from the CSV.
+1. Replace unallowed characters with underscores (`_`) in `name`
+2. Add a `titles` property to the column, with the orginal column header from the CSV.
 
 As a result, only columns with headers that have special characters have a `titles` property.
