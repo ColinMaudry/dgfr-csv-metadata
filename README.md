@@ -1,4 +1,4 @@
-# dgfr-tabular-metadata
+# data.gouv.fr tabular data annotation project
 
 Describing tabular data published on data.gouv.fr with [CSVW](http://www.w3.org/TR/csv2rdf/) metadata in [JSON-LD](http://www.w3.org/TR/json-ld/) serialization.
 
@@ -10,7 +10,7 @@ Certain properties apply to the whole table:
 - `csvw:url`: where CSV can usually be downloaded from
 - `@id`: an identifier for the data table, in the form of a [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (a JSON-LD feature).
 - `@context`: mapping information that enables the resolution of the terms of the schema to unambiguous URIs (a JSON-LD feature).
-- `@base`: base URI from which column @id are are resolved
+- `@base`: base URI from which column `@id` are are resolved (a JSON-LD feature).
 
 Other properties apply to columns:
 
@@ -28,9 +28,8 @@ TODO: add a table example
 
 #### Quick ones
 
-- INSEE codes should be treated as strings
-- What column `name` do I use if the CSV doesn't have headers? (e.g. BANO)
-
+- INSEE codes and postal codes must be treated as strings
+- What column `name` do I use if the CSV doesn't have headers? (e.g. BANO) **=>** Same as `@id`: "col1", "col2", etc.
 
 #### `name` and `titles` for columns
 
