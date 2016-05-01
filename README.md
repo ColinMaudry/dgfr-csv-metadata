@@ -4,7 +4,7 @@ Describing tabular data published on data.gouv.fr with [CSVW](http://www.w3.org/
 
 Each CSV file (or tabular TXT) has a companion JSON file (JSON-LD syntax) that describes the CSV file as table.
 
-Certain properties apply to the whole table:
+Certain proper(a JSON-LD feature).ties apply to the whole table:
 
 - `dcterms:title`: a title, as defined in [the Dublin Core vocabulary](http://dublincore.org/documents/dcmi-terms/#terms-title)
 - `csvw:url`: where CSV can usually be downloaded from
